@@ -218,7 +218,7 @@ public class BasicLineItemProcessor implements LineItemProcessor {
                     resourceCostValue = usageValue * config.reservationService.getLatestHourlyTotalPrice(millisStart, tagGroup.region, usageTypeForPrice, config.reservationService.getDefaultReservationUtilization(0L));
                 }
                 catch (Exception e) {
-                    logger.error("failed to get RI price for " + tagGroup.region + " " + usageTypeForPrice);
+                   //  logger.error("failed to get RI price for " + tagGroup.region + " " + usageTypeForPrice);
                     resourceCostValue = -1;
                 }
             }
